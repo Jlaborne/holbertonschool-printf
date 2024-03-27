@@ -38,5 +38,5 @@ int print_integer(va_list list)
 	{
 		_putchar(*p);
 	}
-	return(size);
+	return (size);
 }

@@ -2,8 +2,8 @@
 
 /**
  * print_string - Print a string
- * @separator: The separator string to print before the string
- * @args: A va_list containing the string to print
+ * @list: va_list
+ * Return: Number of character printed
  */
 int print_string(va_list list)
 {
@@ -21,5 +21,5 @@ int print_string(va_list list)
 		p_len++;
 	}
 
-	return(p_len);
+	return (p_len);
 }
