@@ -2,8 +2,9 @@
 
 /**
  * print_all - Print values based on format string
- * @format: The format string
- * @...: Additional arguments depending on format string
+ * @str: The format string
+ * @list: Additional arguments depending on format string
+ * Return: Number of characters printed
  */
 int print_all(const char *str, va_list list)
 {
