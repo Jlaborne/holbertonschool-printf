@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * _printf -
- * @format:
- *
+ * _printf -  prints a char string to stdout
+ * @format: the string to print
  * Return: The number of characters printed (excluding
  * the null byte used to end output to strings)
  */
