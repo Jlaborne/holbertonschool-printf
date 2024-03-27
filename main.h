@@ -23,8 +23,8 @@ int print_integer(va_list);
  **/
 typedef struct _format
 {
-        char _char;
-        int (*f)(va_list);
+	char _char;
+	int (*f)(va_list);
 } format;
 
 #endif
