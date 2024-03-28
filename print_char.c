@@ -7,11 +7,7 @@
  */
 int print_char(va_list list)
 {
-	char c;
-
-	c = va_arg(list, int);
-
-	_putchar(c);
+	_putchar = va_arg(list, int);
 
 	return (1);
 }
