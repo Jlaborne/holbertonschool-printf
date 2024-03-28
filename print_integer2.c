@@ -10,7 +10,7 @@
  * @ap: Argument pointer
  * Return: len
  */
-int (_print_decimal(va_list ap))
+int (_print_integer2(va_list ap))
 {
 	/*Extract the integer from the argument list*/
 	int value = va_arg(ap, int);
