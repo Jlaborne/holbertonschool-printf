@@ -45,3 +45,4 @@ Output :
 ```code
  Negative:[-762534]
 ```
+![printf_flowchart]("C:\Users\bakou\Pictures\Screenshots\printf_flowchart.png")
