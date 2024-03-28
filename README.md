@@ -15,10 +15,10 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 | Specifiers  | Functions   |Description |
 | ----------- | ----------- |----------- |
-| c      | _printchar       |prints a character |
-| s  | _printstring       |prints a string |
-| i  | _print_integer        |prints an integer |
-| d  | _print_integer        |prints a decimal |
+| %c      | _printchar       |prints a character |
+| %s  | _printstring       |prints a string |
+| %i  | _print_int_dec        |prints an integer |
+| %d  | _print_int_dec        |prints a decimal |
 
 ## Usage/Examples
 
