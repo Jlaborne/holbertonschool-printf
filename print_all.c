@@ -45,8 +45,8 @@ int percent_call(const char *str, va_list list, int *i)
 	format formats[] = {
 		{'s', print_string},
 		{'c', print_char},
-		{'d', print_integer},
-		{'i', print_integer},
+		{'d', print_int_dec},
+		{'i', print_int_dec},
 		{0, NULL}
 	};
 
