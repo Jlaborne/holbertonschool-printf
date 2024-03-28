@@ -12,7 +12,7 @@ int print_integer2(va_list list)
 	if (value < 0)
 	{
 		len = len + _putchar('-');
-		abs = value * -1;
+		abs = -value;
 	}
 	else
 		abs = value;
