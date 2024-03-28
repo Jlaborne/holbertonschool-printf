@@ -45,3 +45,7 @@ Output :
 ```code
  Negative:[-762534]
 ```
+Flowchart :
+
+![printf_flowchart](https://github.com/Jlaborne/holbertonschool-printf/assets/59557237/6ab0965c-ba5c-4100-892f-86ce15d8fc46)
+
