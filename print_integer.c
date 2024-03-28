@@ -25,6 +25,7 @@ int print_integer(va_list list)
 	{
 		_putchar('0');
 		return (1);
+		size++;
 	}
 
 	while (num > 0)
