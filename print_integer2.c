@@ -1,43 +1,32 @@
-#include <stdarg.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include "main.h"
-
-/**
- * _print_decimal - writes the decimal values to stdout
- * @ap: Argument pointer
- * Return: len
- */
-int (print_integer2(va_list ap))
+int print_integer2(va_list list)
 {
-	/*Extract the integer from the argument list*/
-	int value = va_arg(ap, int);
-	/*Variables to keep track of the count and the digits of the number*/
-	int count = 0;
-	int digits[12];/*An integer will never contain more than 12 digits*/
-	int index = 0;
-	int i;
+	int value;
+	unsigned int abs, a, len;
+	unsigned int countn = 1;
 
-	if (value < 0) /*Handling negative values*/
-	{
-		putchar('-');
-		value = -value; /*Converts number to its absolute value*/
-		count++;
-	}
-	/*Extracting the digits to store them in the array*/
-	do {
-		digits[index++] = value % 10;
-		value /= 10;
-	} while (value > 0);
+	len = 0;
 
-	/*Printing in reverse order to get the correct output*/
-	for (i = index - 1; i >= 0; i--)
+	value = va_arg(list, int);
+
+	if (value < 0)
 	{
-		putchar('0' + digits[i]);
-		count++;
+		len = len + _putchar('-');
+		abs = value * -1;
 	}
-	/*Return the total count of characters printed*/
-	return (count);
+	else
+		abs = value;
+
+	a = abs;
+	while (a > 9)
+	{
+		a = a / 10;
+		countn = countn * 10;
+	}
+	while (countn >= 1)
+	{
+		len = len + _putchar(((abs / countn) % 10) + '0');
+		countn = countn / 10;
+	}
+	return (len);
 }
