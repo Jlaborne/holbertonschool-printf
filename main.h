@@ -14,7 +14,7 @@ int percent_call(const char *, va_list, int *);
 int print_char(va_list);
 int print_string(va_list);
 int print_integer(va_list);
-int print_integer2(va_list);
+
 /**
  * struct _format - Typedef struct
  *
