@@ -14,8 +14,8 @@ int print_integer(va_list list)
 	int size = 0;
 	char *p;
 
-	if (INT_MIN > num || num > INT_MAX)
-		return(-1);
+	if (INT_MIN > num || INT_MAX < num)
+		return (-1);
 
 	if (num < 0)
 	{
