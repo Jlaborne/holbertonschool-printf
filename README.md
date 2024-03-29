@@ -1,6 +1,6 @@
 # Project : C - printf
 ![](https://imgur.com/ZdbB0Pf.png)
-Description : 
+Description :
 This project aim to recreate a function similar to the function "printf()".
 
 ## What is printf() ?
