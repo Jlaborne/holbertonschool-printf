@@ -33,6 +33,8 @@ int print_int_dec(va_list);
 .Pp
 %d : print decimal
 .Pp
+%i : print integer
+.Pp
 %c : Print character
 .Pp
 %% : print string if percent is include in a phrase
@@ -60,4 +62,4 @@ Print a number
 _printf("%d\\n", -9782438);
 
 .Sh AUTHORS
-FAREL et JOSHUA #C23
+FAREL & JOSHUA #C23
